@@ -1,0 +1,318 @@
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 10;
+  font-family: Arial;
+}
+
+
+.dollar {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+vertical-align: top;
+}
+
+/*--also doubles as currency symbol placement formatter */
+
+.currency-symbol {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+vertical-align: top;
+}
+
+.cent {
+font-size: 20px;
+/*text-decoration: underline; */
+vertical-align: top;
+}
+
+.flex-container-sec2 mona {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+vertical-align: top;
+}
+
+
+.flex-item2 span2 {
+  color: white;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: red;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header-right {
+  float: right;
+}
+
+
+.shoemainbacktoothers {
+  height: 20px;
+  background-image: linear-gradient(to right, #be166e , #ff6200);
+  color: white;
+}
+
+.flex-container-sec1 {
+  display: flex;
+  flex-direction: row;
+  height: 475px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #be166e , #ff6200);
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+
+
+}
+
+.flex-container-sec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 375px;
+  padding: 30px;
+  background-image: linear-gradient(to right, #be166e , #ff6200);
+}
+
+.flex-container-sec2  {
+  color: white
+}
+
+.flex-container-sec2 mon {
+  color: white
+}
+
+.flex-container-sec2 pre {
+font-size: 15px;
+  color: brown;
+}
+
+
+.flex-item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.flex-item2 {
+  width: 37%;
+  line-height: 2;
+}
+
+.flex-item2 h11 {
+  color: white;
+  font-size: 35px;
+    line-height: 1;
+    line-spacing: 2;
+}
+
+.flex-item2 h12 {
+  color: brown;
+  font-size: 15px;
+    line-height: 1.6;
+<!--  line-spacing: 2;  -->
+
+}
+
+.flex-item2 p11 {
+  color: white;
+  font-size: 100%;
+  line-spacing: 2;
+      line-height: 2;
+}
+
+.flex-itema {
+  padding: 45px;
+  align-items: center;
+  width: 35%;
+  line-height: 1;
+}
+
+.flex-itemb {
+  padding: 45px;
+  align-items: center;
+  width: 35%;
+  line-height: 1;
+}
+
+.flex-itemc {
+  padding: 45px;
+  align-items: center;
+  width: 35%;
+  line-height: 1;
+}
+
+
+.flex-item aa {
+  color:white;
+  font-weight: bold;
+  float: left;
+}
+
+.flex-item bb {
+  color:white;
+  font-weight: bold;
+  float: right;
+}
+
+.flex-item p {
+  color:white;
+  font-weight: bold;
+  line-height: 2
+}
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.linego {
+ border-style: dashed;
+ color: #9A2A40;
+ border-width: 1px;
+ border-spacing: 40px;
+ line-height: 2;
+}
+
+.brow {
+    color:brown;
+    float:right;
+    text-decoration: underline;
+}
+
+
+.centera img {
+  display: block;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  padding: 10px;
+  height: 140px;
+}
+
+/*
+.buyinfo {
+ text-decoration: underline;
+ color:brown;
+}
+
+.bob {
+   text-decoration: none;
+   color:green;
+}
+*/
+
+/*
+.copo{
+ color:green;
+ text-decoration: none;
+ }
+*/
+
+
+.footer a{
+  float: left;
+  color: red;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-right a {
+    float: right;
+    text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+    line-height: 25px;
+  color: black;
+}
+
+.footer-right aa {
+    float: right;
+    text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+    line-height: 25px;
+  color: black;
+}

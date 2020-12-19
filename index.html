@@ -21,7 +21,7 @@
 
     <div class="header-right">
       <img style="display:inline; float: left; margin:10px 5px 10px 5px;" src="day-1-cart.jpg" width="25" heigh="80">
-      <a href="#default" class="header.a">Shopping Cart (2) </a>
+      <a href="#default" class="header.a">Shopping Cart ( <span id="count"></span> ) </a>
     </div>
 
     <div class="header-right">
@@ -63,16 +63,78 @@
 
       <!-- There is probably a better way to do this, but I'm not sure on spacing between price and buy now button -->
               <span2 class="dollar"> &nbsp; &nbsp; </span2>
-              <a href="#" class="myButton"> Buy Now! </a>
+
+<!-- delete soon old buy button -->
+  <!--            <a href="#" class="myButton"> Buy Now! </a> -->
+             <a><button id="btn1"onclick="ChangeColor()">BUY NOW</button></a>
+
+        </div>
      </div>
-   </div>
+  </div>
+
+<!-- tabbed section -->
+
+
+<!-- Tab links -->
+
+<div class="container">
+  <div class="tab">
+    <button class="tablinks" onclick="openbox(event, 'Product')">Product Details</button>
+      <button class="tablinks" onclick="openbox(event, 'SizeAFit')">Size & Fit</button>
+ </div>
+ <div class="tabright">
+    <button class="tablinks" onclick="openbox(event, 'Reviews')">Reviews &#9733; &#9733; &#9733; &#9733; &#9734;</button>
   </div>
 
 
+</div>
 
-  <div class="centera">
-    <img src="day-6-tabbed-details.gif" height="680" width="1150">
-  </div>
+<div class="container">
+   <br>
+     <div class="linegosolid"></div>
+
+
+</div>
+
+
+<!-- </div> -->
+
+<br>
+<br>
+
+<!-- Tab content -->
+  <div id="Product" class="tabcontent">
+
+  <h1>Exciting Topic</h1>
+  <br>
+  <p>Content here</p>
+  <br>
+  <h3>Exciting Topic</h3>
+  <br>
+  <p>Content here</p>
+
+</div>
+
+<div id="SizeAFit" class="tabcontent">
+  <h3>Find Your Shoe Size & Fit</h3>
+  <br>
+  <p>Content here</p>
+</div>
+
+<div id="Reviews" class="tabcontent">
+  <h3>Reviews</h3>
+  <p> Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be dissapointed in your purchase.</p>
+</div>
+
+<div class="containerbob">
+   <br>
+     <div class="shopothers">
+       <h3> Shop Recommended Shoes </h3>
+      </div>
+</div>
+
+
+
 
 
 
@@ -127,25 +189,72 @@
 
  </div>
 
-  <div class="footer">
-   <img style="float: left; margin: 0px 15px 15px 0px;" src="day-1-logo.jpg" width="100">
-   <a href="#default" class="header.a">Men</a>
-   <a href="#default" class="footer.a">Women</a>
-   <a href="#default" class="footer.a">Boys</a>
-   <a href="#default" class="footer.a">Girls</a>
-   <a href="#default" class="footer.a">Customize</a>
 
-  <div class="footer-right">
-   <aa href="#default" class="footer-right"> &copy; 2017 Copyright. Sneaker Shop, LLC.</aa>
-           <a href="#default" class="buyinfo"> | </a>
-     <a href="#default" class="buyinfo">Shipping</a>
-        <a href="#default" class="buyinfo"> | </a>
-      <a href="#default" class="buyinfo">Terms and Conditions</a>
-  </div>
-
-</div>
 
 </br>
 
+<p style="text-align:left;">
+  <img style="display:inline; float: left; margin: 0px 15px 15px 0px;" src="day-1-logo.jpg" width="100">
+   <aa href="#default" class="footera">Men</aa>
+   <aa href="#default" class="footera">Women</aa>
+   <aa href="#default" class="footera">Boys</aa>
+   <aa href="#default" class="footera">Girls</aa>
+   <aa href="#default" class="footera">Customize</aa>
+
+    <span style="float:right;">
+     <bb href="#default" class="buyinfo">Shipping</bb>
+     <a href="#default" class="copyrightinfo"> | </a>
+     <bb href="#default" class="buyinfo">Terms and Conditions</bb>
+     <a href="#default" class="copyrightinfo"> | </a>
+     <a href="#default" class="copyrightinfo">2017 &#169; Sneaker Shop, LLC.</a>
+   </span>
+</p>
+
+
 </body>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var clicks = 0;
+
+
+    openbox(event, 'Product');
+
+    function ChangeColor()
+    {
+         document.getElementById("btn1").style.backgroundColor = 'red';
+         document.getElementById("btn1").style.color = "white";
+         document.getElementById("btn1").innerHTML = 'ADDED TO CART';
+          clicks = clicks +1;
+         document.getElementById("count").innerHTML = clicks;
+      }
+
+      function openbox(evt, boxName) {
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(boxName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+</script>
+
+
+
 </html>
